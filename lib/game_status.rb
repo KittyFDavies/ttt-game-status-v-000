@@ -26,11 +26,13 @@ WIN_COMBINATIONS = [
 #end
 
  def won?(board)
-  WIN_COMBINATIONS.each { |win_index|
-    if win_index[0] == win_index[1] && win_index[2]
-      return win_combination
+  WIN_COMBINATIONS.each do |win_combination|
+    win_combination.each do |win_index|
+      if win_index[0] == win_index[1] && win_index[2]
+        return win_combination
+      end
     end
-  }
+  end
 end
 
 def full?(board)
