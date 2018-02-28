@@ -22,7 +22,6 @@ def won?(board)
           return win_combination
       end
     end
-    # if above and taken, return combination//else return nil/false
   end
 end
 
@@ -35,8 +34,8 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board)
-    if won?(board)
+  if full?(board) == true
+    if won?(board) == true
       return false
     else
       return true
