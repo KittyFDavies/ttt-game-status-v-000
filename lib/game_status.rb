@@ -34,15 +34,3 @@ def full?(board)
     true
   end
 end
-
-def draw?(board)
-
-end
-
-def over?(board)
-
-end
-
-def winner
-
-end
