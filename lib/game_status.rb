@@ -26,4 +26,26 @@ def won?(board)
     win_index_7 = win_combination[6]
     win_index_8 = win_combination[7]
   end
+  if (win_index_1[0] == "X" && win_index_1[1] == "X" && win_index_1[2] == "X") || (win_index_1[0] == "O" && win_index_1[1] == "O" && win_index_1[2] == "O")
+    return win_index_1
+  elsif win_index_2[0] == "X" && win_index_2[1] == "X" && win_index_2[2] == "X"
+    return win_index_2
+    
+  end
+end
+
+def full?
+
+end
+
+def draw?
+
+end
+
+def over?
+
+end
+
+def winner
+
 end
