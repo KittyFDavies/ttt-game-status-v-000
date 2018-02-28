@@ -31,6 +31,7 @@ def won?(board)
       if position_taken?(board, win_combination[0]) && position_taken?(board, win_combination[1]) && position_taken?(board, win_combination[1])
         return win_combination
       end
+    end
     # if above and taken, return combination//else return nil/false
   end
 end
