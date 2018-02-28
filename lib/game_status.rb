@@ -18,9 +18,11 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each { |win_combination|
     win_combination.select { |win_index|
-      win_index.all? { |position| 
+      win_index.all? { |position|
         if position == "X" || position == "O"
           return win_combination
+        else
+          false
         end
       }
     }
