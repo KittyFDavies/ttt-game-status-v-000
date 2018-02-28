@@ -28,7 +28,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     if board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
-      return win_combination
+      if win_combination.any? { |i| i == true}
+        return win_combination
+      end
     end
     # if above and taken, return combination//else return nil/false
   end
