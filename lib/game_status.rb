@@ -30,7 +30,6 @@ def won?(board)
     return win_index_1
   elsif win_index_2[0] == "X" && win_index_2[1] == "X" && win_index_2[2] == "X"
     return win_index_2
-    
   end
 end
 
