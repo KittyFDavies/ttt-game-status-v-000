@@ -25,6 +25,7 @@ def won?(board)
   end
   if board.all do |space|
     space == " " || space == ""
+    end
     return false
   end
 end
