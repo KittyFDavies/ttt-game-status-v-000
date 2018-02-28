@@ -27,32 +27,4 @@ def won?(board)
     win_index_8 = win_combination[7]
     win_index_9 = win_combination[8]
   end
-  position_1 = board[win_index_1]
-  position_2 = board[win_index_2]
-  position_3 = board[win_index_3]
-  position_4 = board[win_index_4]
-  position_5 = board[win_index_5]
-  position_6 = board[win_index_6]
-  position_7 = board[win_index_7]
-  position_8 = board[win_index_8]
-  position_9 = board[win_index_9]
-  if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_4 == "X" && position_5 == "X" && position_6 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_7 == "X" && position_8 == "X" && position_9 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_1 == "X" && position_4 == "X" && position_7 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_2 == "X" && position_5 == "X" && position_8 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_3 == "X" && position_6 == "X" && position_9 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_1 == "X" && position_5 == "X" && position_9 == "X"
-    return win_combination # return the win_combination indexes that won.
-  elsif position_3 == "X" && position_5 == "X" && position_7 == "X"
-    return win_combination # return the win_combination indexes that won.
-  else
-    false
-  end
 end
