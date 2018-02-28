@@ -18,10 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each { |win_combination|
     win_combination.each { |win_index|
-      if board[win_index[0]] == board[win_index[1]]
-          if board[win_index[1]] == board[win_index[2]]
-            return win_combination
-          end
+      if board[win_index[0]] == board[win_index[1]] &&  board[win_index[2]]
+        return win_combination
       end
     }
   }
@@ -43,6 +41,6 @@ def over?(board)
 
 end
 
-def winner
+def winner(board)
 
 end
