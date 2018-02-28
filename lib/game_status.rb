@@ -23,7 +23,7 @@ def won?(board)
       else
         return false
       end
-    else 
+    else
       return false
     end
   end
