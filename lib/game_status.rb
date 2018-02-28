@@ -12,5 +12,5 @@ WIN_COMBINATIONS = [
   [1, 4, 7], # mid col
   [2, 5, 8], # right col
   [0, 4, 8], # l-to-r diagonal
-  [2, 4, 6], # r-to-l diagonal
+  [2, 4, 6] # r-to-l diagonal
 ]
