@@ -15,16 +15,6 @@ WIN_COMBINATIONS = [
   [2, 4, 6] # r-to-l diagonal
 ]
 
-# def won?(board)
-#  WIN_COMBINATIONS.each { |win_combination|
-#    win_combination.each { |win_index|
-#      if board[win_index[0]] == board[win_index[1]] && board[win_index[2]]
-#        return win_combination
-#      end
-#    }
-#  }
-#end
-
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     if board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
@@ -63,5 +53,9 @@ def over?(board)
 end
 
 def winner(board)
-
+  if won?(board).include("X")
+    return "X"
+  else
+    return "O"
+  end  
 end
