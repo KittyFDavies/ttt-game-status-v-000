@@ -53,7 +53,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board).include("X")
+  if won?(board).include?("X")
     return "X"
   else
     return "O"
