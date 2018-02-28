@@ -58,6 +58,6 @@ def winner(board)
   elsif won?(board).include?("O")
     return "O"
   else
-    return false
+    return nil
   end
 end
