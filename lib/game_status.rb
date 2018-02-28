@@ -27,11 +27,9 @@ def won?(board)
     win_index_8 = win_combination[7]
     win_index_9 = win_combination[8]
   end
-  win_combination.each do |position|
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-  end
+  position_1 = board[win_index_1]
+  position_2 = board[win_index_2]
+  position_3 = board[win_index_3]
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
     return win_combination # return the win_combination indexes that won.
   else
