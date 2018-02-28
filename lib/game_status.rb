@@ -23,6 +23,10 @@ def won?(board)
       end
     end
   end
+  if board.all do |space|
+    space == " " || space == ""
+    return false
+  end
 end
 
 def full?(board)
