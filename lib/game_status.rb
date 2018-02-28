@@ -28,6 +28,11 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     if board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
+      if win_combination.each do |position|
+        position == position_taken
+          return win_combination
+        end
+      end
     end
     # if above and taken, return combination//else return nil/false
   end
