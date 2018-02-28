@@ -14,3 +14,7 @@ WIN_COMBINATIONS = [
   [0, 4, 8], # l-to-r diagonal
   [2, 4, 6] # r-to-l diagonal
 ]
+
+def won?
+
+end
