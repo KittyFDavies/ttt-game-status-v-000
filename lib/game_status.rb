@@ -40,9 +40,6 @@ def over?(board)
 end
 
 def winner(board)
-  WIN_COMBINATIONS.each do |set|
-    if board[set] == ["X", "X", "X"]
-      return "X"
-    end
-  end
+  set = won?(board)[0]
+  "X" == set
 end
