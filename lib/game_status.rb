@@ -40,11 +40,8 @@ def over?(board)
 end
 
 def winner(board)
-  WIN_COMBINATIONS.any? do |win_combination|
-    if board[win_combination[0, 1 , 2]] == ["X", "X", "X"]
-      return "X"
-    elsif board[win_combination[0, 1, 2]] == ["O", "O", "O"]
+  board[won?(board)] == ["X", "X", "X"]
+    return "X"
+    board[won?(board)] == ["O", "O", "O"]
       return "O"
-    end
-  end
 end
