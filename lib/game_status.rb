@@ -40,8 +40,7 @@ def over?(board)
 end
 
 def winner(board)
-  set = won?(board)[0]
-  if "X" == set
-    return "X"
+  if set = won?(board)
+    return set[0]
   end
 end
