@@ -41,6 +41,6 @@ end
 
 def winner(board)
   if set = won?(board)
-    return board[set[0]]
+    board[set[0]]
   end
 end
