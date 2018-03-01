@@ -45,5 +45,6 @@ def winner(board)
       return "X"
     elsif board[win_combination[0, 1, 2]] == ["O", "O", "O"]
       return "O"
+    end
   end
 end
