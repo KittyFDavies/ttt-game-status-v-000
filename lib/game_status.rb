@@ -40,8 +40,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).include?("X")
-    return "X"
-  won?(board).include?("O")
-    return "O"
+  WIN_COMBINATIONS.any? do |win_combination|
+    win_combination == ["X", "X", "X"] or win_combination == ["O", "O", "O"]
 end
