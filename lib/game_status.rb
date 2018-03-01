@@ -42,6 +42,6 @@ end
 def winner(board)
   board[won?(board)] == ["X", "X", "X"]
     return "X"
-    board[won?(board)] == ["O", "O", "O"]
-      return "O"
+  board[won?(board)] == ["O", "O", "O"]
+    return "O"
 end
