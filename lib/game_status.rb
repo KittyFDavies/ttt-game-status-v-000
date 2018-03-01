@@ -22,7 +22,6 @@ def won?(board)
         return false
       elsif position_taken?(board, win_combination[0]) == true
           return win_combination
-        end
       end
     end
   end
