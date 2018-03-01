@@ -40,7 +40,6 @@ def over?(board)
 end
 
 def winner(board)
-  if board[won?(board)].include?("X")
-    return "X"
-  end
+  WIN_COMBINATIONS.each do |set|
+    board[set] == ["X", "X", "X"]
 end
