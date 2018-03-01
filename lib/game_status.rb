@@ -42,4 +42,5 @@ end
 def winner(board)
   WIN_COMBINATIONS.each do |set|
     board[set] == ["X", "X", "X"]
+  end
 end
