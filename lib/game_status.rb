@@ -18,8 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   if board.all do |space|
     space == " " || space == ""
-    end
     return false
+    end
   elsif  WIN_COMBINATIONS.each do |win_combination|
       if board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
         if position_taken?(board, win_combination[0]) == true
