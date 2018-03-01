@@ -40,6 +40,7 @@ def over?(board)
 end
 
 def winner(board)
-  board[won?(board)].include?("X")
+  if board[won?(board)].include?("X")
     return "X"
+  end
 end
