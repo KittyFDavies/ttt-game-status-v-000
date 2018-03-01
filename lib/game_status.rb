@@ -42,4 +42,5 @@ end
 def winner(board)
   WIN_COMBINATIONS.any? do |win_combination|
     win_combination == ["X", "X", "X"] or win_combination == ["O", "O", "O"]
+  end
 end
