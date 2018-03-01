@@ -40,8 +40,11 @@ def over?(board)
 end
 
 def winner(board)
-  board[won?(board)] == ["X", "X", "X"]
+  if board[won?(board)] == ["X", "X", "X"]
     return "X"
-  board[won?(board)] == ["O", "O", "O"]
+  elsif board[won?(board)] == ["O", "O", "O"]
     return "O"
+  else
+    return false
+  end
 end
