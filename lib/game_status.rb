@@ -16,9 +16,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.all do |space|
+  blank = board.all do |space|
     space == " " || space == ""
-    end
+  end
+  if blank == true 
     return false
   elsif  WIN_COMBINATIONS.each do |win_combination|
       if board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]]
