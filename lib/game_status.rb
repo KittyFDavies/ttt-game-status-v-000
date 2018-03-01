@@ -26,10 +26,8 @@ def won?(board)
 end
 
 def full?(board)
-  if board.include?(" " || "")
-    false
-  else
-    true
+  board.all? do |full_board|
+    full_board == "X" || full_board == "O"
   end
 end
 
