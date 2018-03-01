@@ -41,5 +41,7 @@ end
 
 def winner(board)
   set = won?(board)[0]
-  "X" == set
+  if "X" == set
+    return "X"
+  end
 end
